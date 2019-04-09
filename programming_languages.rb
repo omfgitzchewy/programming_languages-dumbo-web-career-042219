@@ -3,8 +3,8 @@ def reformat_languages(languages)
   arr = []
   languages.each do |style, language|
     language.each do |type, value|
-      arr << style
       new_hash[language] = {type: "#{value}", style: arr}
+      arr << style
     end
   end
   new_hash
